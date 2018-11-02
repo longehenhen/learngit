@@ -13,6 +13,7 @@ function profit(period,rate,day){
 	for(let j=0;j<i;j++){
 	income+=income*(rate/100/365)*period;
 }
+	income+=income*(rate/100/365)*(day%period);
 	return ((income-3000)/3000*100*365/day);
     }
 
